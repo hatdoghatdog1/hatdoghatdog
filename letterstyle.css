@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fef6e4;
+    color: #333;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffb3c1;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro button:hover {
+    background-color: #ff4d6d;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    padding: 20px;
+}
+
+.letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.letter h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.letter p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.heart-container {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6f91;
+    position: relative;
+    transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #ff6f91;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    left: 25px;
+    top: 0;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 10px;
+}
+.images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.images img:hover {
+    transform: scale(2.5);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.images img {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}

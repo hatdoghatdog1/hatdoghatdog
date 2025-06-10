@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link rel="stylesheet" href="letterstyle.css">
+</head>
+<body>
+    <div id="intro" class="intro">
+        <h1 style="font-weight: bolder;">Welcome, MHYYMHYYY</h1>
+        <button id="enter-btn">Enter</button>
+    </div>
+
+    <div id="content" class="content hidden">
+        <section class="letter">
+            <div class="heart-container">
+                <div class="heart"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2>HAPPY 16TH MONTHSARYY MYLOVEEE</h2>
+            <p>
+                Dear MHYY MHYYY ,<br>
+                Hi mhyymhyy i hope you appreciate this simple yet sweet gift from me iloveyou today tommorow and forever i love you so muchh my love, i hope that our love would never end i cant imagine my life without you so bare with me until we create a perfect version of ourselves for each other
+                Also sorry for everything i always make you cry it always make me feel like im a bad boyfriend but trust me im working on my own self and growth just so you can love me more and for you to not cry again iloooveyouuuusomuchh my loveee
+                you dont know how much you worth to me so dont leave mee okayyyyyyyyy hihihi happy 16th monthsaryyy againnn my mhyyyymhyyyy<br>
+                <br>again, Happy 16th monthsaryyy my loveee! more monthsaryyy to come <br>
+                Love always,<br>
+                Dyss
+            </p>
+        </section>
+
+        <section class="gallery">
+            <h2>Our Memories</h2>
+            <div class="background-video-container">
+                <video autoplay muted loop id="background-video">
+                    <source src="images/dance.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <audio autoplay loop>
+                    <source src="images/dance.mp4" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            <div class="images">
+               
+                <img src="images/1.jpg" alt="Memory 1">
+                <img src="images/2.jpg" alt="Memory 2">
+                <img src="images/3.jpg" alt="Memory 3">
+                <img src="images/4.jpg" alt="Memory 4">
+                <img src="images/5.jpg" alt="Memory 5">
+                <img src="images/6.jpg" alt="Memory 6">
+                <img src="images/7.jpg" alt="Memory 7">
+                <img src="images/8.jpg" alt="Memory 8">
+                <img src="images/9.jpg" alt="Memory 9">
+                <img src="images/10.jpg" alt="Memory 10">
+                <img src="images/11.jpg" alt="Memory 11">
+                <img src="images/12.jpg" alt="Memory 12">
+                <img src="images/13.jpg" alt="Memory 13">
+                <img src="images/14.jpg" alt="Memory 14">
+                <img src="images/15.jpg" alt="Memory 15">
+                <img src="images/16.jpg" alt="Memory 16">
+                <img src="images/17.jpg" alt="Memory 17">
+                <img src="images/18.jpg" alt="Memory 18">
+                <img src="images/19.jpg" alt="Memory 19">
+                <img src="images/20.jpg" alt="Memory 20">
+                <img src="images/1.gif" alt="Memory 1">
+                <img src="images/21.jpg" alt="Memory 21">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+    </div>
+
+    <script src="letter.js"></script>
+</body>
+</html>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+        background-attachment: fixed;
+        color: #333;
+    }
+
+    .heart-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .heart {
+        width: 100px;
+        height: 90px;
+        background-color: #ff6b6b;
+        position: relative;
+        transform: rotate(-45deg);
+    }
+
+    .heart::before,
+    .heart::after {
+        content: "";
+        width: 100px;
+        height: 90px;
+        background-color: #ff6b6b;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .heart::before {
+        top: -50px;
+        left: 0;
+    }
+
+    .heart::after {
+        left: 50px;
+        top: 0;
+    }
+
+    .gallery {
+        text-align: center;
+    }
+
+    .images img {
+        width: 150px;
+        height: auto;
+        margin: 10px;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #background-video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #intro {
+        text-align: center;
+        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #enter-btn {
+        background-color: #ff6b6b;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    #enter-btn:hover {
+        background-color: #ff4c4c;
+    }
+    .images img {
+        position: relative;
+    }
+
+    .images img::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 20px;
+        background-color: #ff6b6b;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .images img::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+</style>

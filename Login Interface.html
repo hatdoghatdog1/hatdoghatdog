@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        :root {
+            --color-bg: #ffffff;
+            --color-text: #6b7280;
+            --color-input-border: #d1d5db;
+            --color-button-bg: #000000;
+            --color-button-text: #ffffff;
+            --border-radius: 0.75rem;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('images/15.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; /* Ensures the background fills the viewport */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main.container {
+            background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background for readability */
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #374151;
+            user-select: none;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+            font-size: 1rem;
+            padding: 0.75rem 1rem;
+            border: 1.5px solid var(--color-input-border);
+            border-radius: var(--border-radius);
+            transition: border-color 0.3s ease;
+            outline-offset: 2px;
+        }
+
+        button {
+            font-size: 1.125rem;
+            font-weight: 700;
+            padding: 0.85rem 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main class="container" role="main" aria-label="Login Form">
+        <h1> Who are you?</h1>
+        <form id="loginForm" novalidate>
+            <div>
+                <label for="username">Enter Your Whole name</label>
+                <input type="text" id="username" name="username" autocomplete="username" required aria-required="true">
+            </div>
+            <h4 style="font-size: 1rem; font-weight: 500; color: #374151; margin: 0.5rem 0;">Date format MM/DD/YY</h4>
+            <div>
+                <label for="password">Date anniversary </label>
+                <input 
+                    type="password"
+                    id="password"
+                    name="password"
+                    autocomplete="current-password"
+                    required
+                    aria-required="true"
+                    minlength="4"
+                />
+            </div>
+            <button type="submit" aria-label=" Submit Login Form " > Enter </button>
+        </form>
+    </main>
+
+    <script>
+        const loginForm = document.getElementById('loginForm')
+
+        const validUsername = 'nathalie' ;
+        const validPassword = '121023';
+
+        loginForm.addEventListener('submit' , function(event){
+            event.preventDefault();
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+
+            if (username === validUsername &&  password === validPassword) {
+                alert('Login Succes! Welcome, ' + username + ' . ');
+                
+                window.location.href = "letter.html";
+
+            } else {
+                alert('Invalid username or password. Please Try Again. ');
+            }
+        });
+    </script>
+    
+</body>
+</html>
